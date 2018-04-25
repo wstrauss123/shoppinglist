@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Lets Go Shopping</title>
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel='stylesheet' href='style.css' />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src='app.js'></script>
+	<link rel="icon" type="image/ico" href="favicon_black.ico" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="container">
+    <header> 
+  		<h1 id="title">Shopping List</h1>
+    	<!-- <h5 id="date"><input type="date" /></h5> -->
+	</header>
+    
+    <form action="javascript:void(0);">
+        <div id="options">
+        	<select name="item" id="selection_item">
+            	<option selected disabled>Select Catagory</option>
+            	<option value="vegetable">Fruit/Veggies</option>
+            	<option value="grain">Grains</option>
+            	<option value="protein">Protein</option>
+            	<option value="dairy">Dairy</option>
+		<option value="misc">Miscellaneous</option>
+        	</select>
+        	<p><input type="text" class="food_entry" id="food_item" autocomplete="off" placeholder="Enter Grocery Item"/></p>
+        </div>
+    </form>
+
+    <div id="center1">
+        <div id="veggie">
+            <p class="weighted">Fruit/Veggies</p>
+            <ul class="veggie_item"></ul>
+        </div>
+        <div id="grain">
+            <p class="weighted">Grains</p>
+            <ul class="grain_item"></ul>
+        </div>
+        <div id="protein">
+            <p class="weighted">Protein</p>
+            <ul class="protein_item"></ul>
+        </div>
+        <div id="dairy">
+            <p class="weighted">Dairy</p>
+            <ul class="dairy_item"></ul>
+        </div>
+	<div id="misc">
+            <p class="weighted">Miscellaneous</p>
+            <ul class="misc_item"></ul>
+        </div>
+	<div id="spacer">
+	</div>
+    </div>
+</div>
+</body>
+</html>
